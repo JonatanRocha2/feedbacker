@@ -11,6 +11,9 @@ module.exports = {
     parser: '@babel/eslint-parser'
   },
   rules: {
+    'vue/multi-word-component-names': 0,
+    "eol-last": 0,
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
   },
